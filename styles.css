@@ -1,0 +1,17 @@
+/* Navbar Styling */
+.nav-bar {
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0px 0px 1px rgba(0,0,0,.3);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background: #D3D3D3;
+}
+/* End of Navbar Styling */
