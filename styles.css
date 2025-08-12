@@ -1,3 +1,9 @@
+/* Body Tag Styling */
+body {
+    margin: 0px;
+}
+/* End of Body Tag Styling */
+
 /* Navbar Styling */
 .nav-bar {
     z-index: 10;
@@ -12,6 +18,35 @@
     align-items: center;
     height: 50px;
     width: 100%;
-    background: #D3D3D3;
+    background: #f8f8f8;
+}
+
+.nav-btn {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  margin-left: 2rem;
+  transition: all 200ms;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+}
+
+.nav-btn.logo {
+  transition: all 300ms;
+}
+
+.nav-btn.logo:hover {
+  transform: scale(1.1) rotate(5deg) translateX(10px);
+}
+
+.nav-btn.right {
+  margin-left: 85%;
+  transition: all 300ms;
+}
+
+.nav-btn.right:hover {
+  transform: scale(1.1) rotate(3deg);
 }
 /* End of Navbar Styling */
