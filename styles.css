@@ -2,11 +2,13 @@
   --default-font: 'Roboto', sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
   --default-width: 100%;
   --default-rgba: rgba(0,0,0,.3);
+  --off-white: #ecf0f1;
 }
 
 /* Body Tag Styling */
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 /* End of Body Tag Styling */
 
@@ -110,7 +112,7 @@ body {
 .clients {
   height: 10 rem;
   width: var(--default-width);
-  background: #ecf0f1;
+  background: var(--off-white);
 }
 
 .clients-header {
@@ -206,7 +208,7 @@ body {
 .gallery-sec {
   margin-right: .3rem;
   height: 130vh;
-  background: #ecf0f1;
+  background: var(--off-white);
   width: var(--default-width);
   padding: 3px;
   padding-top: 10px;
@@ -365,3 +367,103 @@ body {
   color: #fff;
 }
 /* End of Second Subscribe Form Styling */
+
+/* Testimonials Styling */
+.testimonials {
+  margin-top: -2rem;
+  height: 80vh;
+  width: var(--default-width);
+  background-color: var(--off-white);
+
+}
+
+.testimonial-title {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.tests {
+  position: absolute;
+  width: 300%;
+  display: flex;
+  transition: all 400ms;
+}
+
+.test.first {
+  right: -200%;
+}
+
+.tests.second {
+  right: -100%;
+}
+
+.tests.third {
+  right: 0%;
+}
+
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--default-width);
+}
+
+.test1 {
+  position: absolute;
+  left: 0;
+}
+
+.test2 {
+  position: absolute;
+  left: 33%;
+}
+
+.test3 {
+  position: absolute;
+  left: 66%;
+}
+
+.testimonial-image {
+  border: 8px solid white;
+  border-radius: 50%;
+  height: 272px;
+  width: 272px;
+}
+
+.tesetimonial-quote {
+  margin-top: 1rem;
+  border: 15px solid white;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.tesetimonial-quote p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.dots {
+  align-self: baseline;
+  margin-top: 28rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: var(--default-width);
+}
+
+.dot {
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  margin-right: 1rem;
+  transition: all 200ms;
+}
+
+.dot:hover {
+  background: #000;
+}
+/* End of Testimonials Styling */
