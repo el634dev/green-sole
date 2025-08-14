@@ -1,6 +1,7 @@
 :root {
   --default-font: 'Roboto', sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
-  --default-width: var(--default-width);
+  --default-width: 100%;
+  --default-rgba: rgba(0,0,0,.3);
 }
 
 /* Body Tag Styling */
@@ -97,11 +98,11 @@ body {
   width: 15rem;
   text-align: center;
   transition: all 200ms;
-  box-shadow: 0 2px 0px rgba(0, 0, 0, .3);
+  box-shadow: 0 2px 0px var(--default-rgba);
 }
 
 .btn-cta:hover {
-    box-shadow: 0 2px 1px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 1px var(--default-rgba);
 }
 /* End of Call to Action Button Styling */
 
@@ -200,3 +201,151 @@ body {
   transform: scale(1.05);
 }
 /* End of Subscribe Form Styling */
+
+/* Gallery Styling */
+.gallery-sec {
+  margin-right: .3rem;
+  height: 130vh;
+  background: #ecf0f1;
+  width: var(--default-width);
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gallery {
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-gap:10px;
+  perspective: 800px;
+}
+
+/* Different styling to target different elements */
+.gallery {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+}
+
+/* In case Grid is not supported */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: 1px 2px 6px rgba(0,0,0,.3);
+  transition: all 300ms;
+  transform-style: preserve-3d;
+  background-size: coer;
+  background-position: center;
+}
+
+.panel div {
+  background: var(--default-rgba);
+  padding: 5px;
+  color: #fff;
+}
+
+.panel:hover {
+  transform: scale(1.01) translateY(-5px) rotateX(10deg) rotateY(2deg) skewY(4deg);
+  box-shadow: 1px 4px 9px rgba(0,0,0,.5);
+  z-index: 3;
+}
+
+.tall-panel {
+  grid-row-end: span 2;
+}
+
+.g-header {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+}
+
+.gallery > * {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+/* In case Grid is not supported */
+.g-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Set the margin used on flex items to 0 as we have gaps in grid.  */
+@supports (display: grid) {
+  .gallery > * {
+    margin: 0;
+  }
+}
+
+.a {
+  background: url('https://images.pexels.com/photos/266840/pexels-photo-266840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+}
+
+.b {
+  background: url('https://images.pexels.com/photos/812875/pexels-photo-812875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+}
+
+.c {
+  background: url('https://images.pexels.com/photos/421160/pexels-photo-421160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: -70px;
+}
+
+.d {
+  background: url('https://images.pexels.com/photos/112285/pexels-photo-112285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+}
+
+.e {
+  background: url('https://images.pexels.com/photos/293405/pexels-photo-293405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;  
+}
+
+.f {
+  background: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-position: -40px;
+}
+
+
+.g {
+  background: url('https://images.pexels.com/photos/373964/pexels-photo-373964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: -100px;
+  background-size: cover;
+}
+
+.h {
+  background: url('https://images.pexels.com/photos/247203/pexels-photo-247203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;  
+}
+
+.i {
+  background: url('https://images.pexels.com/photos/40383/shoes-rock-climbing-hiking-walking-40383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;  
+}
+/* End of Gallery Styling */
