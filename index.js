@@ -91,3 +91,28 @@ prev.addEventListener("click", function() {
   dotClick('second', 'third', 'first');
 
 })
+
+// ----------------------------
+// FAQ Accordion Section
+const accSection = document.getElementsByClassName("accordion");
+
+// Loop through all buttons
+for (let i = 0; i < accSection.length; i++) {
+  // Event Trigger
+  accSection[i].addEventListener("click", function() {
+    // Add active class
+    this.classList.toggle("active");
+    // Select Sibling Element
+    let panel = this.nextElementSibling;
+
+    // If sibling is open then close else open
+    if (panel.style.maxHeight){
+      //panel is open open
+      panel.style.maxHeight = null; //add this line
+
+    } else {
+      //panel is closed
+      panel.style.maxHeight = panel.scrollHeight + "px"; //add this line
+    }
+  });
+}
