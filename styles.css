@@ -545,5 +545,67 @@ body {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
 /* End of FAQ Styling */
+
+/* Footer Styling */
+.footer {
+  height: 30vh;
+  margin: 0;
+  background: #34495e;
+  color: var(--off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--default-font);
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-cta p {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.footer-links {
+  text-align: left;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--off-white);
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-copyright {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  color: var(--off-white);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* End of Footer Styling */
