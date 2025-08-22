@@ -34,7 +34,7 @@ body {
 .nav-links {
   height: 50px;
   width: 100%;
-  background: #fff;
+  background: white;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -63,7 +63,7 @@ body {
 }
 
 .nav-btn.right {
-  margin-left: 80%; /*made this smaller*/
+  margin-left: 80%; 
   transition: all 300ms;
 }
 

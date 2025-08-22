@@ -116,31 +116,3 @@ for (let i = 0; i < accSection.length; i++) {
     }
   });
 }
-
-// Popup Logic
-const popUp = document.getElementById('pop-up');
-const popUpLayer = document.getElementById('pop-up-layer');
-const closeModal = document.getElementById('close-pop-up');
-
-// Navbar button
-const subBtn = document.getElementById('sub-btn');
-
-subBtn.addEventListener("click", () => {
-  popUpLayer.style.display = 'flex';
-})
-
-// Clicking the close modal makes the popup disappear
-closeModal.addEventListener("click", function() {
-  popUpLayer.style.display = 'none';
-})
-
-// Set a number for pop up display
-let popUpSeconds = 40;
-
-// Trigger popup after seconds variable
-let popUpFun = window.setInterval(function() {
-  popUpLayer.style.display = 'flex';
-
-  window.clearInterval(popUpFun);
-
-}, popUpSeconds * 1000);
