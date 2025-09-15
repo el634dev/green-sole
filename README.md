@@ -19,7 +19,8 @@ A sustainability-focused e-commerce storefront selling shoes crafted from eco-fr
 - Product Gallery
 - Client Testmoninals
 - Newsletter Form
-- Lightweight, accessible UI 
+- Lightweight, accessible UI
+- Smooth scrolling
 <!-- - Client-side cart with add/remove/update, stored in localStorage -->
 
 ## Tech Stack
