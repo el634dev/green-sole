@@ -1,5 +1,5 @@
 # Green Sole Co.
-A sustainability-focused e-commerce storefront selling shoes crafted from eco-friendly materials and uses fair-trade practices. The site is built with vanilla HTML, CSS, and JavaScript, featuring a product gallery, testmoninals and client showcase. It’s a lightweight, accessible, responsive frontend suitable for demonstrations, guide, or as a starting point for a backend using Node.js.
+A sustainability-focused e-commerce storefront selling shoes crafted from eco-friendly materials and fair-trade practices. The site is built with vanilla HTML, CSS, and JavaScript, featuring a product gallery, testmoninals and client showcase. It’s a lightweight, accessible, responsive frontend suitable for demonstrations, guide, or as a starting point for a backend using Node.js.
 
 ## Table of Contents
 - [Features](#features)
